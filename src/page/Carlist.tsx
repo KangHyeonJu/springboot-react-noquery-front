@@ -112,6 +112,7 @@ export default function Carlist() {
           columns={columns}
           getRowId={(row) => row.id}
           disableRowSelectionOnClick={true}
+          showToolbar
         />
         <Snackbar
           open={open}
