@@ -9,7 +9,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: env.VITE_BACKEND_URL,
+        target: "http://localhost:8080",
         changeOrigin: true,
         rewrite: (path) => path.replace(new RegExp(`^${env.VITE_API_URL}`), ""),
       },
